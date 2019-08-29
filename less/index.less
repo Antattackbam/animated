@@ -1,0 +1,38 @@
+body{
+    background-color: #333;
+}
+
+.hello{
+    color: yellow;
+}
+
+.animation{
+    background-color: yellow;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation-name: animateit;
+    animation-duration: 4s;
+    // animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin: 0 auto;
+
+    p{
+        text-align: center;
+        margin: 0 auto;
+        padding: 50%;
+        font-family: fantasy;
+        color: rgb(38, 143, 156);
+        font-size: 20px;
+    }
+}
+
+@keyframes animateit {
+    0% { background-color: yellow; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+    25% { background-color: magenta; left: 200px; top: 0px; border-radius: 50% 0 0 0;}
+    50% { background-color: magenta; left: 200px; top: 200px; border-radius: 50% 50% 0 0;}
+    75% { background-color: teal; left: 0px; top: 200px; border-radius: 50% 50% 50% 0;}
+    100% { background-color: yellow; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+
+}
